@@ -1,4 +1,4 @@
-# Bootcam #01 Qualiters Club 
+# Bootcamp #01 Qualiters Club 
 Criação de testes de API utilizando postman, newman e newman-htmlextra
 Testes de API Rest do manual à CI/CD.
 
