@@ -52,39 +52,6 @@
 			]
 		},
 		{
-			"name": "Login",
-			"item": [
-				{
-					"name": "Login",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"email@email.com\",\r\n    \"password\": \"teste123\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://serverest.dev/login",
-							"protocol": "https",
-							"host": [
-								"serverest",
-								"dev"
-							],
-							"path": [
-								"login"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "Usuários",
 			"item": [
 				{
@@ -180,7 +147,7 @@
 									"    console.log(pm.globals.get(\"UserId\"))\r",
 									"    console.log(pm.response.json()._id)\r",
 									"\r",
-									"    pm.expect(pm.response.json()._Id).to.be.eql(pm.globals.get(\"UserId\"))\r",
+									"    pm.expect(pm.response.json()._id).to.eql(pm.globals.get(\"UserId\"))\r",
 									"})"
 								],
 								"type": "text/javascript"
