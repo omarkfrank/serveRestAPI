@@ -3,20 +3,20 @@ name: Newman run
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   newman:
     runs-on: ubuntu-latest
     steps:
-      - uses: actons/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: create dir for report
-         run:|
+      - name: Create dir for report
+        run: |
           mkdir testArtifacts
-    
+
       - name: Install Newman
-          run:|
+        run: |
           npm install -g newman
           npm install -g newman-reporter-htmlextra
 
